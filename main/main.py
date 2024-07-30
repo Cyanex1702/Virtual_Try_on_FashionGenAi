@@ -40,10 +40,10 @@ def parse_arguments():
     args, _ = parser.parse_known_args()
     return args
 
-
+#!git clone https://huggingface.co/maiti/cloth-segmentation
 def load_u2net():
     device = "cuda" if torch.cuda.is_available() else "cpu"
-    checkpoint_path = os.path.join("trained_checkpoint", "/content/Fashion Vr/cloth-segmentation/cloth_segm_u2net_latest.pth")
+    checkpoint_path = os.path.join("trained_checkpoint", "../cloth_segm_u2net_latest.pth")
     net = U2NET(in_ch=3, out_ch=4)
     net = load_checkpoint_mgpu(net, checkpoint_path)
     net = net.to(device)

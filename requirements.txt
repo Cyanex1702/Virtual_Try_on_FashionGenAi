@@ -88,4 +88,4 @@ Werkzeug==2.2.2
 xxhash==3.0.0
 yarl==1.8.1
 zipp==3.8.1
-rembg @ git+https://github.com/ovshake/rembg@cf2120a940cfc56ae25bf1ecfb08769a0e22ad4b
+rembg
